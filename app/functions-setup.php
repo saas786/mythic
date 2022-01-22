@@ -20,6 +20,17 @@
 namespace Mythic;
 
 /**
+ * Set the relative path to where templates are held in the theme.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+add_filter( 'hybrid/template/path', function (){
+	return 'resources/views';
+} );
+
+/**
  * Set up theme support.  This is where calls to `add_theme_support()` happen.
  *
  * @link   https://developer.wordpress.org/reference/functions/add_theme_support/
