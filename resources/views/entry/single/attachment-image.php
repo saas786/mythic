@@ -2,13 +2,6 @@
 
 	<header class="entry__header">
 		<?php Hybrid\Theme\Post\display_title() ?>
-
-		<div class="entry__byline">
-<!--			--><?php //Hybrid\Media\Meta\display_image_sizes( [
-//				// Translators: %s is a list of image size links.
-//				'text' => esc_html__( 'Sizes: %s' )
-//			] ) ?>
-		</div>
 	</header>
 
 	<?php echo wp_get_attachment_image( get_the_ID(), 'large', false, [ 'class' => 'aligncenter' ] ) ?>
