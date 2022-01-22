@@ -31,14 +31,14 @@ $mythic = new \Hybrid\Core\Application();
 # bootstrapping process.
 
 $mythic->provider( \Mythic\Providers\AppServiceProvider::class );
-$mythic->provider( \Hybrid\Attr\AttrServiceProvider::class );
-$mythic->provider( \Hybrid\Lang\LanguageServiceProvider::class );
-$mythic->provider( \Hybrid\Media\MetaServiceProvider::class );
-$mythic->provider( \Hybrid\Pagination\PaginationServiceProvider::class );
-$mythic->provider( \Hybrid\Template\TemplatesServiceProvider::class );
-$mythic->provider( \Hybrid\Template\HierarchyServiceProvider::class );
+$mythic->provider( \Hybrid\Attr\Provider::class );
+$mythic->provider( \Hybrid\Lang\Provider::class );
+$mythic->provider( \Hybrid\Media\Meta\Provider::class );
+$mythic->provider( \Hybrid\Pagination\Provider::class );
+$mythic->provider( \Hybrid\Template\Hierarchy\Provider::class );
+$mythic->provider( \Hybrid\Template\Manager\Provider::class );
 $mythic->provider( \Hybrid\Theme\Provider::class );
-$mythic->provider( \Hybrid\View\ViewServiceProvider::class );
+$mythic->provider( \Hybrid\View\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.

@@ -15,7 +15,7 @@
 
 namespace Mythic\Providers;
 
-use Hybrid\Tools\ServiceProvider;
+use Hybrid\Core\ServiceProvider;
 use Mythic\Customize\Customize;
 
 /**
